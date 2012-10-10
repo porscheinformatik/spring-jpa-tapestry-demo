@@ -1,0 +1,12 @@
+<t:layout xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd">
+
+	<form t:type="form" t:id="personForm">
+		<t:errors/>
+		<div t:type="beaneditor" object="person"></div>
+		<input t:type="submit" class="btn btn-primary" value="Create" />
+	</form>
+
+	<table t:type="grid" source="personList">
+	</table>
+
+</t:layout>
